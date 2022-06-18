@@ -9,6 +9,8 @@ plugins {
 group = "momj.gat"
 version = "1.0-SNAPSHOT"
 
+val ktorVersion = "2.0.2"
+
 kotlin {
     android()
     jvm("desktop") {
@@ -22,6 +24,8 @@ kotlin {
                 api(compose.runtime)
                 api(compose.foundation)
                 api(compose.material)
+                implementation("io.ktor:ktor-client-core:$ktorVersion")
+                implementation("io.ktor:ktor-client-cio:$ktorVersion")
             }
         }
         val commonTest by getting {

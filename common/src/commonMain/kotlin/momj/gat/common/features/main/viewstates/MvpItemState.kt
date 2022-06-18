@@ -1,4 +1,4 @@
-package momj.gat.common.entities
+package momj.gat.common.features.main.viewstates
 
 import androidx.compose.runtime.Immutable
 
